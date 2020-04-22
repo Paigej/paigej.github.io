@@ -137,7 +137,9 @@
                 <br>
                 <p align="center"> I printed nine test prints to both look a quality and measure the output with calipers to calculate my percent error for print measurements. All prints were created in Rhino with standard surface extrusions and exported as STLs into Cura. 
                 </p>
-
+                <a class="btn btn-social btn-github " target ="_blank" href="https://github.com/Paigej/paigej.github.io/tree/master/projects/testPrints">View the STLs on Github<span class="fa fa-github"></span></a>  
+                <br>
+                <br>
                 <ul>
                   <li>A 2cm cube with the standard "low quality" settings and a brim</li>
                   <li>A 2cm cube with the standard "standard quality" settings and a brim</li>
@@ -155,7 +157,7 @@
 
                 <br>
                 <br>
-                <p align="center"> The printer did quite well, with an average 3.22% measured error, and Median percent error of 0.8%. I only had to print the last cube once to get within half a millimeter of the STL measurement. There are definitely quite a few imperfections though. I will run you through some of my observations.
+                <p align="center"> The printer did quite well, with an average 1.08% measured error, and Median percent error of 0.7%. I only had to print the last cube once to get within half a millimeter of the STL measurement. There are definitely quite a few imperfections though. I will run you through some of my observations.
                 <hr>
                 <br>
                 <img class="img-responsive center-block" src="../../images/testPrints/testPrint7.jpeg" alt="testPrint 5">
@@ -175,15 +177,26 @@
                 </p>  
                 <hr>
                 <br>
-                <img class="img-responsive center-block" src="../../images/testPrints/testPrintRing.png" alt="testPrint 9">
+                <img class="img-responsive center-block" src="../../images/testPrints/testPrintRing0.png" alt="testPrint 9">
                 <br>
                 <p align="center">The print I had the most trouble with the single wall extrusion tube. I created a tube with .4mm width walls, since that is the width of a single extrusion. When slicing in Cura, the width was correct at .4, but for some reason the extruder went over the same layer twice.  I even tried remaking the tube with .2mm width and using the settings for printing thin walls, but I was having the same issues. It's possible that this is because <a href="https://community.ultimaker.com/topic/23089-is-there-a-way-to-force-cura-to-print-a-single-inner-wall/?fbclid=IwAR3uOztGALKHD-AP0e2PAl1l-DoTnHeBD2rvmgmvCz30t_IDK76zA4lfkFU "> Cura can only print an even number of walls</a>. The width ended up being .64mm instead of .4mm. So not quite double what it was supposed to be, but still 60% error which was much larger than any of my other prints.
                 </p>
                 <hr>
+                <img class="img-responsive center-block" src="../../images/testPrints/testPrintRing1.png" alt="testPrint 9">
                 <br>
-                <img class="img-responsive center-block" src="../../images/testPrints/testPrintRing2.png" alt="testPrint 9">
+                <p align="center">Luckily after reading a few posts on #questions-and-answers, I realized I was going about it completely wrong, and should have used slicer settings instead of using a ring stl. I removed the infill, top/bottom, and set the wall width to 1 wall, and it worked like a charm. I also turned on "spiralize outside contours" to get a single layer spiral wall. 
+                </p>
+                <hr>
                 <br>
-                <p align="center">I didn't have any issues of the extruder going over the double walled ring twice.
+                <img class="img-responsive center-block" src="../../images/testPrints/testPrintRing2.jpeg" alt="testPrint 9">
+                <br>
+                <p align="center">Getting the measurement perfect was so satisfying!
+                </p>
+                <hr>
+                <br>
+                <img class="img-responsive center-block" src="../../images/testPrints/testPrintRing3.png" alt="testPrint 9">
+                <br>
+                <p align="center">I didn't have any issues of the extruder going over the double walled ring twice, and used a .8mm thick model here.
                 </p>
                 <hr>
                 <br>
